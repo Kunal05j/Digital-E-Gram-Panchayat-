@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+Digital E-Gram Panchayat
+Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Digital E-Gram Panchayat is a web-based platform designed to digitalize village-level administrative services.
+The application allows citizens to apply for various Gram Panchayat services online, while administrators and staff can manage, review, and update applications in real time.
 
-## Available Scripts
+The system focuses on transparency, accessibility, and improving the efficiency of public service delivery.
 
-In the project directory, you can run:
+Features
+User
 
-### `npm start`
+Register and log in using Firebase Authentication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+View available Panchayat services
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Apply for services through online forms
 
-### `npm test`
+Track application status
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Manage basic profile details
 
-### `npm run build`
+Staff
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Secure login for authorized staff members
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+View applications assigned to staff
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Update the status of applications (Approved, Rejected, Pending)
 
-### `npm run eject`
+Admin
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create, update, and delete services
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+View all services in the system
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Manage citizen applications
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+View all registered users
 
-## Learn More
+Role-based access control for Admin and Staff
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Technologies Used
+Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React.js
 
-### Code Splitting
+HTML5
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+CSS3
 
-### Analyzing the Bundle Size
+JavaScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend / Database
 
-### Making a Progressive Web App
+Firebase Authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Firebase Firestore
 
-### Advanced Configuration
+Firebase Hosting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Tools
 
-### Deployment
+npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Firebase CLI
 
-### `npm run build` fails to minify
+Visual Studio Code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+How It Works
+
+Users register and log in using email/password authentication.
+
+Admin adds services from the Admin Dashboard.
+
+Citizens choose a service and submit an application.
+
+Applications are stored in Firestore.
+
+Staff and Admin can view and update application statuses.
+
+Users can track their submitted applications through their dashboard.
+
+Firebase Setup
+
+Create a project in Firebase Console
+
+Add a Web App and copy the Firebase configuration keys
+
+Paste the configuration into
+
+src/firebase/firebaseConfig.js
+
+
+Enable the following:
+
+Authentication → Email/Password
+
+Firestore Database → Test Mode (for development)
+
+Use Firebase Hosting if you want to deploy the project.
+
+Future Enhancements
+
+SMS/Email notifications
+
+Automatic Aadhaar-based verification
+
+Advanced analytics dashboard for administrators
+
+Multilingual support
